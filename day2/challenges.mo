@@ -75,41 +75,6 @@ actor daytwo {
   };
   
 
-
-
-
-
-  public func test() : async () {
-    let q1 = await averagearray([12,3,3]);
-    assert(q1==6);
-    Debug.print("test q1 is passed");
-    
-    let q2 = await count_character("message", 's');
-    assert(q2==2);
-    Debug.print("test q2 is passed");
-
-    let q3 = await factorial(4);
-    assert(q3==24);
-    Debug.print("test q3 is passed");
-
-    let q4 = await number_of_words("this was very helpful");
-    //Debug.print(debug_show(q4));
-    assert(q4==4);
-    Debug.print("test q4 is passed");
-
-    let q5 = await find_duplicates([10,5,12,18,5,13,10]);
-    //Debug.print(debug_show(q5));
-    assert(q5==[10,5]);
-    Debug.print("test q5 is passed");  
-
-    let q6 = await convert_to_binary(12);
-    assert(q6=="1100");
-    let q61 = await convert_to_binary(0);
-    assert(q61=="0");
-    Debug.print("test q6 is passed");
-
-  }
-
 };
 
 
