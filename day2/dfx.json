@@ -1,0 +1,12 @@
+{
+    "canisters":{
+        "challenges": {
+            "main": "challenges.mo",
+            "type": "motoko"
+            }
+    },
+        "dfx": "0.12.1",
+        "version": 1
+
+}
+
