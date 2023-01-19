@@ -6,10 +6,6 @@ import Int "mo:base/Int";
 // dfx start --background --clean
 // dfx stop
 // dfx deploy; dfx canister call challenges test
-
-
-
-
 module {
   public let value = 0;
   // i might try another non looping example
@@ -30,7 +26,14 @@ module {
     return sorted[i+1];
 } ;
 
-
+public func drop<T>(xs : [T], n : Nat) : [T] {
+  let size = xs.size();
+    if(size < n)
+      return [];
+    let newsize = size - n;
+    let array : [T] = Array.tabulate<T>(newsize, func i = xs[i+n]);
+    return array;
+};
 
 public func remove_even(array : [Nat]) :  async [Nat] { 
   return Array.filter<Nat>(array, func x = x % 2 != 0);

@@ -7,7 +7,7 @@ Q3: Voting power of 10 ICP is roughly 16.875 (delay ~1,5 plus age 1.25). https:/
 
 Q4: the import sections is missing. We need to import import Nat "mo:base/Nat";
 
-Q5: The immutable array expression cannot produce expected type, so we need to omit the var and make it:  
+Q5: The immutabl array expression cannot produce expected type, so we need to omit the var and make it:  
 
 actor {
   var languages : [Text] = ["English", "German", "Chinese", "Japanese", "French"];
