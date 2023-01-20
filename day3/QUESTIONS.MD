@@ -2,7 +2,7 @@ Q1: True or False: the Internet Computer has a unique public key that can be use
 True, the key to making the IC possible-:)
 
 Q2: True or False: when I realize an update call, the boundary node will participate in the consensus but not during query calls.
-True 
+False (not the boundary node - diff to subnet)
 
 Q3: True or False: I can create a certified variable that will certify the response of the following actor.
 actor {
